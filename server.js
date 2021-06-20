@@ -8,6 +8,7 @@ app.use(cors());
 app.use('/public', express.static(process.cwd() + '/public'));
 
 process.env.DB_URI;
+app.get('/api/')
 app.get('/', function (req, res) {
     res.sendFile(process.cwd() + '/views/index.html');
 });
